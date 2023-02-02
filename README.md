@@ -42,6 +42,16 @@ ssh Your-SSH-Key-ID@git-codecommit.us-east-2.amazonaws.com
 ## You should see.
 You have successfully authenticated over SSH. You can use Git to interact with AWS CodeCommit. Interactive shells are not supported.Connection to git-codecommit.us-east-1.amazonaws.com closed by remote host.
 
+## Now you can jump back to your Directory and clone repo
+```
+cd $HOME
+copy SSH url
+git clone 'SSH_URL_COPIED'
+[ You should see a message saying: warning: You appear to have cloned an empty repository. ]
+Now you can create files and Push / Pull
+```
+# That's It!!!
+
 ## Troubleshooting
 If you are asked for a fingerprint, click 'Yes'
 
@@ -59,5 +69,9 @@ git config --system -l
 
 if it has remove it by typing
 git config --system --unset credential.helper
+
+
+### Watch Tutorial
+https://www.youtube.com/watch?v=CxKbAxV0Hno
 
 
