@@ -48,7 +48,8 @@ cd $HOME
 copy SSH url
 git clone 'SSH_URL_COPIED'
 [ You should see a message saying: warning: You appear to have cloned an empty repository. ]
-Now you can create files and Push / Pull
+[ Now you can create files and push to Master ]
+git push origin master
 ```
 # That's It!!!
 
