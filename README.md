@@ -1,7 +1,8 @@
 # Setting Up AWS Code Commit
 Setting up AWS CodeCommit for SSH
 
-```cd $HOME/.ssh
+```
+cd $HOME/.ssh
 ssh-keygen
 [here just create the name codecommit_rsa and leave all fields blank *just click enter*]
 cat codecommit_rsa.pub
@@ -9,11 +10,13 @@ cat codecommit_rsa.pub
 
 Now we need to enter our codecommit_rsa.pub into IAM.
 
-```touch config
+```
+touch config
 chmod 600 config
 ```
 
-```nano config
+```
+nano config
 
 Host git-codecommit.*.amazonaws.com
   User [YOUR_SSH_KEY_ID_FROM_IAM]
@@ -23,8 +26,8 @@ Host git-codecommit.*.amazonaws.com
 
 Now lets test to verify it works.
 
-
-```ssh git-codecommit.us-east-1.amazonaws.com
+```
+ssh git-codecommit.us-east-1.amazonaws.com
 ```
 
 # You should see.
